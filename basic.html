@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type and Print</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Type something and see it printed below</h1>
+
+    <input type="text" id="inputText" placeholder="Type here" oninput="printText()">
+    <p id="output"></p>
+
+    <script>
+        function printText() {
+            var input = document.getElementById("inputText").value;
+            document.getElementById("output").innerText = input;
+        }
+    </script>
+
+</body>
+</html>
