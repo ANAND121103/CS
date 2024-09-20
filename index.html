@@ -3,33 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Type and Print</title>
+    <title>Simple Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        #output {
-            margin-top: 20px;
-            font-size: 1.5em;
-            color: blue;
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>Type something and see it printed below</h1>
+<header>
+    <h1>Welcome to My Simple Website</h1>
+</header>
 
-    <input type="text" id="inputText" placeholder="Type here" oninput="printText()">
-    <p id="output"></p>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <script>
-        function printText() {
-            var input = document.getElementById("inputText").value;
-            document.getElementById("output").innerText = input;
-        }
-    </script>
+<main>
+    <h2>About This Website</h2>
+    <p>This is a simple website built using HTML and CSS. You can customize it further by adding more content and style.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Responsive Design</li>
+        <li>Simple Navigation</li>
+        <li>Clean Layout</li>
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Simple Website. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
